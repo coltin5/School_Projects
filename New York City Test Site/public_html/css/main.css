@@ -1,0 +1,77 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.jumbotron{
+    background-color: rgb(0,0,64);
+    color: whitesmoke;
+    background-image: url(https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_720,q_75,w_1400/v1/clients/newyorkcity/NYC_and_Company_Webinars_Masthead_f02625ec-eb6c-42eb-b909-54f137eab679.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(0,0,64);
+    background-size:cover;
+    background-position: bottom left;
+}
+
+
+.navbar-custom a{
+    color: white;
+}
+.navbar-custom a:hover, .navbar-nav > li > a:hover, .nav > li > a:focus{
+background-color: rgb(0,0,32); 
+}
+.navbar-custom .active{
+    background-color: rgba(0,0,32,0.75);
+}
+.navbar-custom .active a:hover{
+color: white;
+background-color: rgba(0,0,32,0.95); 
+}
+.navbar-custom{
+background-color: rgba(0,0,32,0.75);
+}
+.navbar-custom .navbar-toggle {
+background-color:rgb(0,0,32); 
+}
+.navbar-custom .icon-bar { 
+background-color:rgb(128,128,128);
+}
+
+.btn-custom, .btn-custom:hover, .btn-custom:active {
+color: white;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: rgba(200,100,150,0.75);
+} 
+.btn-custom:hover {
+background-color: rgb(200,100,150); 
+}
+.col-md-4 {
+    color: whitesmoke;
+    font-weight: bold;
+
+
+}
+#park{
+    
+    background-image: url(https://media.tacdn.com/media/attractions-splice-spp-674x446/07/82/e4/ed.jpg);
+}
+#dining{
+   
+    background-image: url(https://post.healthline.com/wp-content/uploads/2020/07/pizza-beer-1200x628-facebook-1200x628.jpg);
+}
+#museum{
+   
+    background-image: url(https://d30sbyh791tgpf.cloudfront.net/wp-content/blogs.dir/118/files/2020/08/1920_Met_Reopening-1-950x534.jpg);
+}
+.p{
+    font-weight: bold;
+    color:white;
+}
+#container2 {
+    margin: 30px;
+}
+
+
+
+

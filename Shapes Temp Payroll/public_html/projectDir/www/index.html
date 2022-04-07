@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Coltin's Shapes, Temps, & Payroll</title>
+        <meta charset="UTF-8">
+        <script src="Calculations.js" type="text/javascript"></script> 
+        <link href="Calculations.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="appArea" onLoad="setAppAreaBounds()" onResize="setAppAreaBounds()">
+        <div id='d1'>
+            <p>
+            Enter The Radius of a Circle: 
+            </p>
+            <input type='text' id="radius" value='' placeholder="Enter Raadius Here"/>
+            <p id='p1'> Results for Area :</p>
+            <p id='p2'> Results for Circumference :</p>
+            <input type='button' id="button" value="Calculate Area & Circumference" onClick='display()'/>
+        </div>
+        <div id='d2'>
+            <p>
+                Enter the Length & Width of a Rectangle:
+            </p>
+            <input type='text' id="length" value='' placeholder="Enter Length Here"/>
+            <input type='text' id="width" value='' placeholder="Enter Width Here"/>
+            
+      
+            <p id='p3'> Results for Area :</p>
+            <p id='p4'> Results for Perimeter :</p>
+            <input type='button' id="button" value="Calculate Area & Perimeter" onClick='displayRec()'/>
+        </div>
+        <div id='d3'>
+            <p>
+                Enter a Temperature: 
+            </p>
+            <input type='text' id="temp" value='' placeholder="Enter Degrees Here"/>
+            <p id='p5'> Degrees Fahrenheit :</p>
+            <p id='p6'> Degrees Celsius :</p>
+            <input type='button' id="button" value="Convert to degrees Fahrenheit" onClick='convert()'/>
+            <input type='button' id="button" value="Convert to degrees Celsius" onClick='convert2()'/>
+        </div>
+        <div id='d4'>
+            <p>
+                Payroll Calculator!
+                <br><br>
+                Enter your hours worked and hourly wage:
+            </p>
+            <input type='text' id="hours" value='' placeholder="Enter Hours"/>
+            <input type='text' id="wage" value='' placeholder="Enter Wage"/>
+            <p id='p7'> Compensation $</p>
+            <input type='button' id="button" value="Calculate" onClick='pay()'/>
+            
+        </div>
+    </body>
+    
+</html>
