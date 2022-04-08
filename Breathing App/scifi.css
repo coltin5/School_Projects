@@ -1,0 +1,161 @@
+body {
+    background-color: rgb(56, 8, 106);
+    background-image: url("space2.webp");
+    background-position: center;
+    background-size: cover;
+    color: black;
+    border: 1rem, aqua;
+    min-height: 50%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+h1 {
+    color: rgb(0, 255, 255, .9);
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: overline;
+    box-shadow: 16px, black;
+
+}
+
+.breatheForm {
+    color: rgb(0, 255, 255, .9);
+}
+
+.breathBtn {
+    border-radius: 100px;
+    background-color: rgb(0, 255, 255, .9);
+    justify-self: center;
+    grid-area: "button";
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "label input label input"
+        "label input label input"
+        "div div div button";
+    text-align: right;
+    border: rgb(0, 255, 255, .9);
+    border-width: .25rem;
+    border-style: ridge;
+    padding: .25rem;
+    justify-content: center;
+}
+
+label {
+    margin-right: .5rem;
+}
+
+.circle {
+    position: relative;
+    background: rgb(0, 255, 255, .9);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    margin: auto;
+    margin-top: 14rem;
+    transition-property: height, width, transform, margin;
+    transition-duration: 5s;
+    background-image: url("icon.png");
+    background-position: center;
+    background-size: contain;
+    box-shadow: 0px 0px 30px rgb(0, 255, 255, .9)
+}
+
+.circle.inhale {
+    animation: inhale 5s linear;
+}
+
+.circle.hold1 {
+    animation: hold1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.circle.exhale {
+    animation: exhale 5s linear;
+}
+
+.circle.hold2 {
+    animation: hold2 2s;
+}
+
+@keyframes inhale {
+
+    100% {
+        height: 17rem;
+        width: 17rem;
+        margin-top: 9rem;
+        transform: rotate(360deg);
+    }
+
+
+}
+
+@keyframes exhale {
+
+    0% {
+        height: 17rem;
+        width: 17rem;
+        margin-top: 9rem;
+    }
+
+    100% {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 14rem;
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes hold1 {
+    0% {
+        height: 17rem;
+        width: 17rem;
+        margin-top: 9rem;
+    }
+
+    100% {
+        height: 17rem;
+        width: 17rem;
+        margin-top: 9rem;
+    }
+}
+
+@keyframes hold2 {
+    100% {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 14rem;
+    }
+}
+
+.foot {
+    display: grid;
+    grid-template-areas:
+        "h2 h2 h2";
+    color: rgb(0, 255, 255, .9);
+    margin-top: auto;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+
+}
+
+.bar {
+    border: .6rem solid rgb(0, 255, 255, .9);
+    height: 100vh;
+    border-style: ridge;
+}
+
+
+
+#patterns {}
+
+#benefits {}
+
+#more {}

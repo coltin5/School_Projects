@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Breathe Visualizer</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="breathe.jpeg" />
+    <base href="http://127.0.0.1:5500/index.html">
+    <link rel='stylesheet' type='text/css' media='screen' href='scifi.css'>
+
+
+</head>
+<main>
+
+    <body>
+
+        <section class="bar">
+            <h1 id="title">Breathe Vizualizer</h1>
+
+            <form class="breatheForm">
+
+                <label for="inhale">Inhale</label>
+                <input id="inhale" type="text" placeholder="Seconds" name="inhale" value="5.5" />
+
+                <label for="hold1">Hold</label>
+                <input id="hold1" type="text" placeholder="Seconds" name="hold1" value="2" />
+
+                <label for="exhale">Exhale</label>
+                <input id="exhale" type="text" name="exhale" placeholder="Seconds" value="5.5">
+
+                <label for="hold2">Hold</label>
+                <input id="hold2" type="text" placeholder="Seconds" name="hold2" value="2" />
+
+                <div class="div1"></div>
+                <div class="div1"></div>
+                <button id="breathe" class="breathBtn">Breathe</button>
+
+            </form>
+
+            <div id="circle" class="circle"></div>
+        </section>
+        <footer class="foot">
+            <h2 id="patterns" onclick="go()">Specific Patters</h2>
+            <h2 id="benefits">Benefits</h2>
+            <h2 id="more">More Uses</h2>
+        </footer>
+    </body>
+    <script src='/JS/scifi.js'></script>
+</main>
+
+
+</html>
